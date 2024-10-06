@@ -13,5 +13,7 @@ plt.grid()
 plt.show()
 
 
-
+# with open(path2, "w", newline='') as labelled:          # https://discuss.python.org/t/writing-to-csv-files-unwanted-blank-row-in-file/28391
+#     write=csv.writer(labelled)
+#     write.writerows(data_list)                          # https://www.geeksforgeeks.org/writing-csv-files-in-python/
 
