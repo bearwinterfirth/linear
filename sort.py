@@ -42,11 +42,12 @@ def make_lists_by_classes():
 def plot_points():
     plt.scatter(x0, y0, color="b")
     plt.scatter(x1, y1, color="r")
-    plt.legend([f"y={k}x+{m}", "Class 0", "Class 1"], loc="upper left")
+    plt.legend(["Class 0", "Class 1", f"y={k}x+{m}"], loc="upper left")
     plt.xlim(-5,5)
     plt.ylim(-5,5)
     plt.grid()
     plt.show()
+
 
 def write_labelled_data():
     with open(path2, "w", newline='') as labelled:
