@@ -50,6 +50,7 @@ def plot_points():              # Class 0 points are plotted in blue, class 1 in
 
 
 def write_labelled_data():      # classified points are written to labelled_data.csv
+    print("All classification is written to labelled_data.csv")
     with open(path2, "w", newline='') as labelled:
         for row in data_list:
             labelled.write(f"{row[0]}, {row[1]}, {row[2]}\n")
